@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @time_flow_monitor.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @time_flow_monitor.description %>
+</p>
+
+<p>
+  <strong>Project:</strong>
+  <%= @time_flow_monitor.project_id %>
+</p>
+
+<%= link_to 'Edit', edit_time_flow_monitor_path(@time_flow_monitor) %> |
+<%= link_to 'Back', time_flow_monitors_path %>

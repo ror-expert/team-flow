@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Event Streams</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Project</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @event_streams.each do |event_stream| %>
+      <tr>
+        <td><%= event_stream.name %></td>
+        <td><%= event_stream.description %></td>
+        <td><%= event_stream.project %></td>
+        <td><%= link_to 'Show', event_stream %></td>
+        <td><%= link_to 'Edit', edit_event_stream_path(event_stream) %></td>
+        <td><%= link_to 'Destroy', event_stream, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Event Stream', new_event_stream_path %>

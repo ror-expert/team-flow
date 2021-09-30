@@ -1,0 +1,32 @@
+<%= form_with(model: time_flow_monitor) do |form| %>
+  <% if time_flow_monitor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(time_flow_monitor.errors.count, "error") %> prohibited this time_flow_monitor from being saved:</h2>
+
+      <ul>
+        <% time_flow_monitor.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :project_id %>
+    <%= form.text_field :project_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

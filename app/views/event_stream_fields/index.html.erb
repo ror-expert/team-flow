@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Event Stream Fields</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Event stream</th>
+      <th>Data type</th>
+      <th>Stream type</th>
+      <th>Required</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @event_stream_fields.each do |event_stream_field| %>
+      <tr>
+        <td><%= event_stream_field.name %></td>
+        <td><%= event_stream_field.description %></td>
+        <td><%= event_stream_field.event_stream_id %></td>
+        <td><%= event_stream_field.data_type %></td>
+        <td><%= event_stream_field.stream_type %></td>
+        <td><%= event_stream_field.required %></td>
+        <td><%= link_to 'Show', event_stream_field %></td>
+        <td><%= link_to 'Edit', edit_event_stream_field_path(event_stream_field) %></td>
+        <td><%= link_to 'Destroy', event_stream_field, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Event Stream Field', new_event_stream_field_path %>
