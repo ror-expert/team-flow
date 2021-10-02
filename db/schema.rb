@@ -12,10 +12,13 @@
 
 ActiveRecord::Schema.define(version: 2021_09_30_165622) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "alerts", force: :cascade do |t|
     t.string "name"
     t.text "description"
-    t.integer "project_id", null: false
+    t.bigint "project_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["project_id"], name: "index_alerts_on_project_id"
@@ -24,7 +27,7 @@ ActiveRecord::Schema.define(version: 2021_09_30_165622) do
   create_table "event_stream_fields", force: :cascade do |t|
     t.string "name"
     t.text "description"
-    t.integer "event_stream_id", null: false
+    t.bigint "event_stream_id", null: false
     t.string "data_type"
     t.string "stream_type"
     t.boolean "required"
@@ -36,7 +39,7 @@ ActiveRecord::Schema.define(version: 2021_09_30_165622) do
   create_table "event_streams", force: :cascade do |t|
     t.string "name"
     t.text "description"
-    t.integer "project_id"
+    t.bigint "project_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["project_id"], name: "index_event_streams_on_project_id"
@@ -51,7 +54,7 @@ ActiveRecord::Schema.define(version: 2021_09_30_165622) do
   create_table "projects", force: :cascade do |t|
     t.string "name"
     t.text "description"
-    t.integer "organisation_id", null: false
+    t.bigint "organisation_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["organisation_id"], name: "index_projects_on_organisation_id"
@@ -60,7 +63,7 @@ ActiveRecord::Schema.define(version: 2021_09_30_165622) do
   create_table "report_items", force: :cascade do |t|
     t.string "name"
     t.text "description"
-    t.integer "report_id", null: false
+    t.bigint "report_id", null: false
     t.string "report_type"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -70,7 +73,7 @@ ActiveRecord::Schema.define(version: 2021_09_30_165622) do
   create_table "reports", force: :cascade do |t|
     t.string "name"
     t.text "description"
-    t.integer "project_id"
+    t.bigint "project_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["project_id"], name: "index_reports_on_project_id"
@@ -80,7 +83,7 @@ ActiveRecord::Schema.define(version: 2021_09_30_165622) do
     t.string "name"
     t.text "description"
     t.string "sm_type"
-    t.integer "simulation_id", null: false
+    t.bigint "simulation_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["simulation_id"], name: "index_simulation_steps_on_simulation_id"
@@ -89,7 +92,7 @@ ActiveRecord::Schema.define(version: 2021_09_30_165622) do
   create_table "simulations", force: :cascade do |t|
     t.string "name"
     t.text "description"
-    t.integer "project_id", null: false
+    t.bigint "project_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["project_id"], name: "index_simulations_on_project_id"
@@ -98,7 +101,7 @@ ActiveRecord::Schema.define(version: 2021_09_30_165622) do
   create_table "time_flow_monitors", force: :cascade do |t|
     t.string "name"
     t.text "description"
-    t.integer "project_id", null: false
+    t.bigint "project_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["project_id"], name: "index_time_flow_monitors_on_project_id"
