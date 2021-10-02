@@ -66,7 +66,7 @@ section.login_form {
     background: #FFFFFF;
     border: 1px solid #E2E7F1;
     box-sizing: border-box;
-    box-shadow: 0px 4px 10px -4px rgb(16 24 40 / 10%) !important;
+    /*box-shadow: 0px 4px 10px -4px rgb(16 24 40 / 10%) !important;*/
     border-radius: 5px;
     color: #292B52;
 }
@@ -96,9 +96,8 @@ section.login_form {
     color: #fff !important;
     font-size: 16px !important;
     font-weight: 700 !important;
-    background: linear-gradient(
-263.97deg, #803C8A 16.56%, #FFCDCE 274.83%);
-    box-shadow: 0px 10px 24px -4px rgb(16 24 40 / 10%) !important;
+    background: linear-gradient(263.97deg, #803C8A 16.56%, #FFCDCE 274.83%);
+    /*box-shadow: 0px 10px 24px -4px rgb(16 24 40 / 10%) !important;*/
     border-radius: 58px !important;
 }
 .btn_custom:hover{
@@ -668,12 +667,12 @@ section.manage_stream h4 img {
     padding: 6px 0 0 0;
 }
 .custom_color{
-    background: #503B53 !Important;
+    background: #503B53 !important;
 }
 .opration_div img {
     width: 80px;
     height: 80px;
-    margin: 0 auto !IMPORTANT;
+    margin: 0 auto !important;
     display: block;
     text-align: center;
 }
