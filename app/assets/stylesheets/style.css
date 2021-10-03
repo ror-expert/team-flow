@@ -1,8 +1,14 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400;500;700&display=swap');
+*/
+/*@font-face {
+  font-family: HelveticaNeue;
+  src: url(../fonts/HelveticaNeue-Light-08.ttf);
+}*/
 a.btn:focus,
 a.btn:active,
 a.btn:visited {
-  outline: none !important;
-  box-shadow: none !important;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 button:focus,
@@ -10,8 +16,8 @@ input:focus,
 select:focus,
 textarea:focus,
 a:focus {
-  outline: none !important;
-  box-shadow: none !important;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 button:active,
@@ -36,6 +42,9 @@ a:hover {
     text-decoration: none;
 }
 
+/*body { 
+   font-family: 'HelveticaNeue';
+}*/
 section.login_form {
     background: url('1.png');
     width: 100%;
@@ -57,7 +66,7 @@ section.login_form {
     background: #FFFFFF;
     border: 1px solid #E2E7F1;
     box-sizing: border-box;
-    box-shadow: 0px 4px 10px -4px rgba(16, 24, 40, 0.1) !important;
+    box-shadow: 0px 4px 10px -4px rgb(16 24 40 / 10%) !important;
     border-radius: 5px;
     color: #292B52;
 }
@@ -83,13 +92,14 @@ section.login_form {
     width: 250px;
     height: 48px;
     margin: 0 auto;
-    display: block !important;
-    color: #fff !important;
+    display: block;
+    color: #fff;
     font-size: 16px;
-    font-weight: 700 !important;
-    background: linear-gradient(263.97deg, #803C8A 16.56%, #FFCDCE 274.83%);
-    box-shadow: 0px 10px 24px -4px rgba(16, 24, 40,0.1) !important;
-    border-radius: 58px !important;
+    font-weight: 700;
+    background: linear-gradient(
+263.97deg, #803C8A 16.56%, #FFCDCE 274.83%);
+    box-shadow: 0px 10px 24px -4px rgb(16 24 40 / 10%) !important;
+    border-radius: 58px;
 }
 .btn_custom:hover{
     color: #fff;
@@ -109,7 +119,7 @@ span.back_btn a {
 }
 div#message {
         background: #EB5656;
-    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 7px rgb(0 0 0 / 10%);
     border-radius: 5px;
     padding: 10px;
     color: #fff;
@@ -286,8 +296,9 @@ section.welcome_sec {
     color: #fff;
     border: 0;
     padding: 12px 30px;
-    background: linear-gradient(263.97deg, #803C8A 16.56%, #FFCDCE 274.83%);
-    box-shadow: 0px 10px 24px -4px rgba(16, 24, 40, 0.1) !important;
+    background: linear-gradient(
+263.97deg, #803C8A 16.56%, #FFCDCE 274.83%);
+    box-shadow: 0px 10px 24px -4px rgb(16 24 40 / 10%) !important;
     border-radius: 58px;
     font-size: 16px;
     font-weight: 700;
@@ -371,7 +382,7 @@ section.project_new .login_inner textarea{
     background: #FFFFFF;
     border: 1px solid #E2E7F1;
     box-sizing: border-box;
-    box-shadow: 0px 4px 10px -4px rgba(16, 24, 40,0.1) !important;
+    box-shadow: 0px 4px 10px -4px rgb(16 24 40 / 10%) !important;
     border-radius: 5px;
     padding: 12px 20px;
 }
@@ -389,7 +400,7 @@ section.project_new .login_inner textarea{
     height: 115px;
     display: inline-flex;
     padding: 15px;
-    box-shadow: 2px 8px 15px #000000;
+    box-shadow: 2px 8px 15px #0000000d;
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -504,7 +515,7 @@ section.project_dashboard h3 {
     font-weight: bold;
 }
 .your_inner{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0 ), 0 6px 20px 0 rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 0%), 0 6px 20px 0 rgb(0 0 0 / 8%) !important;
     padding: 0;
     /*border-top-left-radius: 20px;
     border-top-right-radius: 20px;*/
@@ -551,7 +562,7 @@ button.import_btn {
     color: #803C8A;
     padding: 12px 50px;
     font-weight: 700;
-    box-shadow: 0px 10px 24px -4px rgba(16, 24, 40, 0.1) !important;
+    box-shadow: 0px 10px 24px -4px rgb(16 24 40 / 10%) !important;
     border-radius: 58px;
     border: none;
     font-size: 16px;
@@ -680,12 +691,12 @@ section.manage_stream h4 img {
     padding: 6px 0 0 0;
 }
 .custom_color{
-    background: #503B53 !Important;
+    background: #503B53 !important;
 }
 .opration_div img {
     width: 80px;
     height: 80px;
-    margin: 0 auto !IMPORTANT;
+    margin: 0 auto !iMPORTANT;
     display: block;
     text-align: center;
 }
@@ -879,7 +890,7 @@ section.help_bottom {
     width: 100%;
     padding: 15px;
     background-color: #fff;
-    box-shadow: 0px 6px 12px rgba(164, 109, 255,0.1);
+    box-shadow: 0px 6px 12px rgb(164 109 255 / 10%);
     border-radius: 0px 0px 5px 5px;
     height: 80px;
     display: grid;
@@ -959,7 +970,7 @@ section.event_stream img {
 .new_event input , .data_tab input{
     padding: 12px 20px;
     height: calc(2em + .75rem + 2px);
-    box-shadow: 0px 4px 10px -4px rgba(16, 24, 40, 0.1) !important;
+    box-shadow: 0px 4px 10px -4px rgb(16 24 40 / 10%) !important;
     border-radius: 5px; 
     border: 1px solid #D9DDE7;
     color: #111111;
@@ -1100,8 +1111,8 @@ button.table_delete img {
     border-radius: 5px;
     color: #333333;
     height: calc(2em + .75rem + 2px);
-    width: 100%; 
-    box-shadow: 0px 4px 10px -4px rgba(16, 24, 40, 0.1) !important;
+    width: 100%;
+    box-shadow: 0px 4px 10px -4px rgb(16 24 40 / 10%) !important;
 }
 .custom_table td {
     border: 0;
@@ -1245,7 +1256,7 @@ section.event_stream table.event_stream tr {
 }
 div#example_wrapper {
     background: #FFFFFF;
-    box-shadow: 0px 4px 10px -4px rgba(16, 24, 40,0.15);
+    box-shadow: 0px 4px 10px -4px rgb(16 24 40 / 15%);
     border-radius: 10px;
     padding: 20px;
 }
