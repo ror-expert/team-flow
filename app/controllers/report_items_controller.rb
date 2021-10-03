@@ -1,4 +1,5 @@
 class ReportItemsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_report_item, only: %i[ show edit update destroy ]
 
   # GET /report_items or /report_items.json

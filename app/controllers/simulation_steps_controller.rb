@@ -1,4 +1,5 @@
 class SimulationStepsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_simulation_step, only: %i[ show edit update destroy ]
 
   # GET /simulation_steps or /simulation_steps.json

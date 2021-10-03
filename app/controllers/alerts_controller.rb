@@ -1,4 +1,5 @@
 class AlertsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_alert, only: %i[ show edit update destroy ]
 
   # GET /alerts or /alerts.json

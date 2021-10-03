@@ -1,4 +1,5 @@
 class TimeFlowMonitorsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_time_flow_monitor, only: %i[ show edit update destroy ]
 
   # GET /time_flow_monitors or /time_flow_monitors.json

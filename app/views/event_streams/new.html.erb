@@ -1,5 +1,201 @@
-<h1>New Event Stream</h1>
-
-<%= render 'form', event_stream: @event_stream %>
-
-<%= link_to 'Back', event_streams_path %>
+<section class="event_stream">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 pb-3">
+        <a href="/" class="back_btn">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>Back
+        </a>
+        <div class="new_event text-center pt-5"> 
+          <h3 class="pb-4">New Event Stream</h3> 
+          <form>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group"> 
+                  <input type="text" class="form-control" placeholder="Customers Orders">
+                  <label>
+                    <%= image_tag('69.png') %>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group"> 
+                  <input type="text" class="form-control" placeholder="Time Series Description"> 
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label class="check_box">Automatically Create Associated Stream
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="col-md-12">
+                <div class="table-responsive mt-4 custom_table  ">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Field Name</th>
+                        <th>Description</th>
+                        <th>Field Type</th>
+                        <th>Data Type</th>
+                        <th>Required</th>
+                        <th class="text-center">Actions</th>
+                      </tr>
+                    </thead>
+                      <tbody>
+                        <tr>  
+                          <td>
+                            <div class="form-group"> 
+                                <input type="text" class="form-control" placeholder="Order Number"> 
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-group"> 
+                                <input type="text" class="form-control" placeholder=""> 
+                            </div>
+                          </td>
+                                        <td>
+                                           <div class="dropdown">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  String <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                  <a class="dropdown-item" href="#">String</a>
+                                                  <a class="dropdown-item" href="#">String</a>
+                                                  <a class="dropdown-item" href="#">String</a>
+                                                </div>
+                                              </div>
+                                        </td>
+                                        <td>
+                                          <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Categorical <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                              <a class="dropdown-item" href="#">Categorical</a>
+                                              <a class="dropdown-item" href="#">Categorical</a>
+                                              <a class="dropdown-item" href="#">Categorical</a>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td align="center">
+                                          <label class="check_box text-center">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                          </label>
+                                        </td>
+                                        <td>
+      <button class="table_delete">
+        <%= image_tag('70.png') %>Delete</button>
+                                        </td>
+                                      </tr>
+                                      <tr>  
+                                        <td>
+                                          <div class="form-group"> 
+                                              <input type="text" class="form-control" placeholder="Order Number"> 
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div class="form-group"> 
+                                              <input type="text" class="form-control" placeholder=""> 
+                                          </div>
+                                        </td>
+                                        <td>
+                                           <div class="dropdown">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  String <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                  <a class="dropdown-item" href="#">String</a>
+                                                  <a class="dropdown-item" href="#">String</a>
+                                                  <a class="dropdown-item" href="#">String</a>
+                                                </div>
+                                              </div>
+                                        </td>
+                                        <td>
+                                          <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Categorical <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                              <a class="dropdown-item" href="#">Categorical</a>
+                                              <a class="dropdown-item" href="#">Categorical</a>
+                                              <a class="dropdown-item" href="#">Categorical</a>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td align="center">
+                                          <label class="check_box text-center">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                          </label>
+                                        </td>
+                                        <td>
+                                          <button class="table_delete">
+            <%= image_tag('70.png') %>Delete</button>
+                                        </td>
+                                      </tr>
+                                      <tr>  
+                                        <td>
+                                          <div class="form-group"> 
+                                              <input type="text" class="form-control" placeholder="Order Number"> 
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div class="form-group"> 
+                                              <input type="text" class="form-control" placeholder=""> 
+                                          </div>
+                                        </td>
+                                        <td>
+                                           <div class="dropdown">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  String <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                  <a class="dropdown-item" href="#">String</a>
+                                                  <a class="dropdown-item" href="#">String</a>
+                                                  <a class="dropdown-item" href="#">String</a>
+                                                </div>
+                                              </div>
+                                        </td>
+                                        <td>
+                                          <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Categorical <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                              <a class="dropdown-item" href="#">Categorical</a>
+                                              <a class="dropdown-item" href="#">Categorical</a>
+                                              <a class="dropdown-item" href="#">Categorical</a>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td align="center">
+                                          <label class="check_box text-center">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                          </label>
+                                        </td>
+                                        <td>
+                                          <button class="table_delete">
+                <%= image_tag('70.png') %>Delete</button>
+                                        </td>
+                                      </tr> 
+                                    </tbody>
+                                  </table>
+                              </div>
+                              <button class="import_btn mt-4 mb-3 mr-2"><i class="fa fa-plus" aria-hidden="true"></i>New Field</button>
+                              <button class="import_btn mt-4 mb-3 ml-2"><i class="fa fa-plus" aria-hidden="true"></i>Upload</button>
+                          </div>
+                          <div class="col-md-12 ">
+                              <div class="border_final mt-4">
+                                  <button class="project_btn mt-5 mb-5">Submit</button>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+</section>

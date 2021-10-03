@@ -11,8 +11,12 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <%= render 'shared/header' %>
+    <% unless params[:controller].eql?('home') || params[:controller].eql?('projects') %>
+      <%= render 'shared/sub_header' %>
+    <% end %>
+    <!-- <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p> -->
     <%= yield %>
   </body>
 </html>

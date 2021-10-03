@@ -1,4 +1,5 @@
 class EventStreamsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_event_stream, only: %i[ show edit update destroy ]
 
   # GET /event_streams or /event_streams.json

@@ -1,5 +1,41 @@
-<h1>New Project</h1>
+<section class="project_new">
+  <div class="container">
+    <div class="row"> 
+      <div class="col-md-6 col-xs-12 text-center project_bg pt-5">
+        <a href="/projects" class="back_btn"><i class="fa fa-arrow-left" aria-hidden="true"></i>Back</a>
+        <%= image_tag('56.png', class: 'login_img') %>
+        <h3>Create a New Project </h3>
+        <div class="login_inner"> 
+          <!-- <form action="#"> -->
+          <%= form_with(model: @project) do |form| %>
+            <% if @project.errors.any? %>
+              <div id="error_explanation">
+                <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
 
-<%= render 'form', project: @project %>
+                <ul>
+                  <% @project.errors.each do |error| %>
+                    <li><%= error.full_message %></li>
+                  <% end %>
+                </ul>
+              </div>
+            <% end %>
 
-<%= link_to 'Back', projects_path %>
+            <div class="form-group">
+              <%= form.text_field :name, class: 'form-control', placeholder: 'Name' %>
+            </div>
+            <div class="form-group">
+              <%= form.text_area :description, class: 'form-control' %>
+            </div>
+            <%= form.submit 'Submit', class: 'project_btn mb-5 mt-4' %>
+          <% end %>
+          <!-- </form> -->
+        </div> 
+      </div>
+      <div class="col-md-6 col-xs-12 "> 
+        <div class="create_pro_img">
+          <%= image_tag('55.png') %> 
+        </div>
+      </div>
+    </div>
+  </div> 
+</section>
