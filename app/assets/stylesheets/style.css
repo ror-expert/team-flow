@@ -66,7 +66,7 @@ section.login_form {
     background: #FFFFFF;
     border: 1px solid #E2E7F1;
     box-sizing: border-box;
-    box-shadow: 0px 4px 10px -4px rgb(16 24 40 / 10%) !important;
+    box-shadow: 0px 4px 10px -4px rgba(16, 24, 40, 0.1) !important;
     border-radius: 5px;
     color: #292B52;
 }
@@ -98,7 +98,7 @@ section.login_form {
     font-weight: 700;
     background: linear-gradient(
 263.97deg, #803C8A 16.56%, #FFCDCE 274.83%);
-    box-shadow: 0px 10px 24px -4px rgb(16 24 40 / 10%) !important;
+    box-shadow: 0px 10px 24px -4px rgba(16, 24, 40, 0.1) !important;
     border-radius: 58px;
 }
 .btn_custom:hover{
@@ -119,7 +119,7 @@ span.back_btn a {
 }
 div#message {
         background: #EB5656;
-    box-shadow: 0px 3px 7px rgb(0 0 0 / 10%);
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 10px;
     color: #fff;
@@ -298,7 +298,7 @@ section.welcome_sec {
     padding: 12px 30px;
     background: linear-gradient(
 263.97deg, #803C8A 16.56%, #FFCDCE 274.83%);
-    box-shadow: 0px 10px 24px -4px rgb(16 24 40 / 10%) !important;
+    box-shadow: 0px 10px 24px -4px rgba(16, 24, 40, 0.1) !important;
     border-radius: 58px;
     font-size: 16px;
     font-weight: 700;
@@ -382,7 +382,7 @@ section.project_new .login_inner textarea{
     background: #FFFFFF;
     border: 1px solid #E2E7F1;
     box-sizing: border-box;
-    box-shadow: 0px 4px 10px -4px rgb(16 24 40 / 10%) !important;
+    box-shadow: 0px 4px 10px -4px rgba(16, 24, 40, 0.1) !important;
     border-radius: 5px;
     padding: 12px 20px;
 }
@@ -400,7 +400,7 @@ section.project_new .login_inner textarea{
     height: 115px;
     display: inline-flex;
     padding: 15px;
-    box-shadow: 2px 8px 15px #0000000d;
+    box-shadow: 2px 8px 15px #000000;
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -515,7 +515,7 @@ section.project_dashboard h3 {
     font-weight: bold;
 }
 .your_inner{
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 0%), 0 6px 20px 0 rgb(0 0 0 / 8%) !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.1) !important;
     padding: 0;
     /*border-top-left-radius: 20px;
     border-top-right-radius: 20px;*/
@@ -562,7 +562,7 @@ button.import_btn {
     color: #803C8A;
     padding: 12px 50px;
     font-weight: 700;
-    box-shadow: 0px 10px 24px -4px rgb(16 24 40 / 10%) !important;
+    box-shadow: 0px 10px 24px -4px rgba(16, 24, 40, 0.1) !important;
     border-radius: 58px;
     border: none;
     font-size: 16px;
@@ -696,7 +696,7 @@ section.manage_stream h4 img {
 .opration_div img {
     width: 80px;
     height: 80px;
-    margin: 0 auto !iMPORTANT;
+    margin: 0 auto !important;
     display: block;
     text-align: center;
 }
@@ -970,7 +970,7 @@ section.event_stream img {
 .new_event input , .data_tab input{
     padding: 12px 20px;
     height: calc(2em + .75rem + 2px);
-    box-shadow: 0px 4px 10px -4px rgb(16 24 40 / 10%) !important;
+    box-shadow: 0px 4px 10px -4px rgba(16, 24, 40, 0.1) !important;
     border-radius: 5px; 
     border: 1px solid #D9DDE7;
     color: #111111;
@@ -1112,7 +1112,7 @@ button.table_delete img {
     color: #333333;
     height: calc(2em + .75rem + 2px);
     width: 100%;
-    box-shadow: 0px 4px 10px -4px rgb(16 24 40 / 10%) !important;
+    box-shadow: 0px 4px 10px -4px rgba(16, 24, 40, 0.1) !important;
 }
 .custom_table td {
     border: 0;
@@ -1256,7 +1256,7 @@ section.event_stream table.event_stream tr {
 }
 div#example_wrapper {
     background: #FFFFFF;
-    box-shadow: 0px 4px 10px -4px rgb(16 24 40 / 15%);
+    box-shadow: 0px 4px 10px -4px rgba(16, 24, 40, 0.15);
     border-radius: 10px;
     padding: 20px;
 }
