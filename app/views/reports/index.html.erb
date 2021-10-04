@@ -1,31 +1,238 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Reports</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Project</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @reports.each do |report| %>
-      <tr>
-        <td><%= report.name %></td>
-        <td><%= report.description %></td>
-        <td><%= report.project %></td>
-        <td><%= link_to 'Show', report %></td>
-        <td><%= link_to 'Edit', edit_report_path(report) %></td>
-        <td><%= link_to 'Destroy', report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Report', new_report_path %>
+<section class="event_stream">
+<div class="container">
+<div class="row">
+<div class="col-md-12 pb-3">
+    <a href="/" class="back_btn"><i class="fa fa-arrow-left" aria-hidden="true"></i>Back</a>
+    <div class="new_event text-center pt-5"> 
+        <h3 class="pb-5">High Value Customer Orders <a href="#"><%= image_tag("112.png") %></a></h3> 
+        <ul class="nav nav-tabs justify-content-center pb-5" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link " id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><%= image_tag("eye.svg", class: "tab_img") %> Show</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><%= image_tag("edit-3.svg", class: "tab_img") %> Edit</a>
+          </li> 
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade " id="home" role="tabpanel" aria-labelledby="home-tab">
+            <!--  <form> -->
+              <div class="row"> 
+                <div class="col-md-12">
+                    <div class="table-responsive data_table mt-3 mb-3">
+                        <table class="table monitor_table report_table">
+                            <thead>
+                                <tr>
+                                    <th colspan="4">Source Data</th>
+                                </tr>
+                            </thead>
+                            <tbody><tr class="border_none">
+                                <td colspan="2" align="right">
+                                    <div class="data_content"> 
+                                        <h6 class="pt-2 text-left">Total Records in Set: 4000</h6>
+                                            </div>
+                                        </td>
+                                        <td colspan="1" align="right" class="float-right">
+                                            <span class="span_show">Show:</span>
+                                            <div class="dropdown extra_btn">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    10 <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">20</a>
+                                                    <a class="dropdown-item" href="#">50</a>
+                                                    <a class="dropdown-item" href="#">100</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td colspan="1">
+                                            <form>
+                                                <input type="search" name="search" placeholder="Search">
+                                                <label><%= image_tag("85.png") %></label>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr class="thead"> 
+                                                <th><span>0</span><i class="fa fa-angle-up" aria-hidden="true"></i></th>
+                                                <th width="20%"><span>Count</span><i class="fa fa-angle-up" aria-hidden="true"></i></th>
+                                                <th width="20%"><span>Count</span><i class="fa fa-angle-up" aria-hidden="true"></i></th>
+                                                <th width="30%"><span>uuid</span><i class="fa fa-angle-up" aria-hidden="true"></i></th> 
+                                    </tr>
+                                    <tr>
+                                        <td>12-05-2020 07:45</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>787</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>12-05-2020 07:45</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>787</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>12-05-2020 07:45</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>787</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>12-05-2020 07:45</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>787</td> 
+                                    </tr> 
+                                    <tr>
+                                        <td>12-05-2020 07:45</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>787</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>12-05-2020 07:45</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>787</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>12-05-2020 07:45</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>787</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>12-05-2020 07:45</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>787</td> 
+                                    </tr>
+                                    </tbody> 
+                                </table>
+                            </div> 
+                        </div>  
+                        <div class="col-md-12 mt-4 report_img">
+                          <%= image_tag("Events Over Time.png", width: "100%") %>
+                        </div>
+                        <div class="col-md-12 mt-4 report_img">
+                          <%= image_tag("Events Over Time (1).png", width: "100%") %>
+                        </div>
+                        <div class="col-md-12 mt-4 report_img">
+                          <%= image_tag("Events Over Time (Cumulative) (1).png", width: "100%") %>
+                        </div>
+                    </div>
+            <!-- </form>  -->
+          </div>
+          <div class="tab-pane fade active show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+               <form>
+                    <!--  <form> -->
+                <div class="row"> 
+                        <div class="col-md-12">
+                            <div class="table-responsive data_table mt-3 mb-3">
+                                <table class="table monitor_table report_table">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="4">Source Data</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody><tr class="border_none">
+                                        <td colspan="2" align="right">
+                                            <div class="data_content"> 
+                                                <h6 class="pt-2 text-left">Total Records in Set: 4000</h6>
+                                            </div>
+                                        </td>
+                                        <td colspan="1" align="right" class="float-right">
+                                            <span class="span_show">Show:</span>
+                                            <div class="dropdown extra_btn">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    10 <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">20</a>
+                                                    <a class="dropdown-item" href="#">50</a>
+                                                    <a class="dropdown-item" href="#">100</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td colspan="1">
+                                            <form>
+                                                <input type="search" name="search" placeholder="Search">
+                                                <label><%= image_tag("85.png") %></label>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr class="thead"> 
+                                                <th><span>0</span><i class="fa fa-angle-up" aria-hidden="true"></i></th>
+                                                <th width="20%"><span>Count</span><i class="fa fa-angle-up" aria-hidden="true"></i></th>
+                                                <th width="20%"><span>Count</span><i class="fa fa-angle-up" aria-hidden="true"></i></th>
+                                                <th width="30%"><span>uuid</span><i class="fa fa-angle-up" aria-hidden="true"></i></th> 
+                                    </tr>
+                                    <tr>
+                                        <td>12-05-2020 07:45</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>787</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>12-05-2020 07:45</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>787</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>12-05-2020 07:45</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>787</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>12-05-2020 07:45</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>787</td> 
+                                    </tr> 
+                                    <tr>
+                                        <td>12-05-2020 07:45</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>787</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>12-05-2020 07:45</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>787</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>12-05-2020 07:45</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>787</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>12-05-2020 07:45</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>787</td> 
+                                    </tr>
+                                    </tbody> 
+                                </table>
+                            </div> 
+                        </div>  
+                        <div class="col-md-12 mt-4 report_img">
+                          <%= image_tag("Events Over Time.png", width: "100%") %>
+                        </div>
+                        <div class="col-md-12 mt-4 report_img">
+                          <%= image_tag("Events Over Time (1).png", width: "100%") %>
+                        </div>
+                        <div class="col-md-12 mt-4 report_img">
+                          <%= image_tag("Events Over Time (Cumulative) (1).png", width: "100%") %>
+                        </div>
+                    </div>
+            <!-- </form>  -->
+                </form>
+          </div> 
+        </div> 
+    </div>
+</div>
+</div>
+</div>
+</section>

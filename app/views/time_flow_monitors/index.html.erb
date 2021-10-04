@@ -1,31 +1,308 @@
-<p id="notice"><%= notice %></p>
+<section class="event_stream">
+<div class="container">
+<div class="row">
+<div class="col-md-12 pb-3">
+<a href="welcome.html" class="back_btn"><i class="fa fa-arrow-left" aria-hidden="true"></i>Back</a>
+<div class="new_event text-center pt-5"> 
+<h3 class="pb-4">New Monitor</h3> 
+<form>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group"> 
+                <input type="text" class="form-control" placeholder="Monitor Name"> 
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group"> 
+                <input type="text" class="form-control" placeholder="Monitor Description"> 
+            </div>
+        </div> 
+        <div class="col-md-12">
+            <div class="table-responsive mt-4 custom_table monitor ">
+               <table class="table">
+                  <thead>
+                    <tr>
+                      <th colspan="4" class="form_img">
+                        <form>
+                            <input type="search" name="search" placeholder="Search">
+                            <%= image_tag('Vector.png') %>
+                        </form>
+                      </th> 
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td colspan="3">
+                            <h4  class="text-left pt-3">Time Window</h4>
+                        </td>
+                        <td colspan="2" align="right">
+                            <ul class="nav nav-tabs float-right " id="myTab" role="tablist">
+                              <li class="nav-item">
+                                <a class="nav-link " id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"> Filters</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Aggregations</a>
+                              </li> 
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr> 
+                        <td width="30%">
+                            <div class="dropdown">
+                              <button class="btn btn-secondary dropdown-toggle text-left" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Previous <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Next</a>
+                                <a class="dropdown-item" href="#">Categorical</a>
+                                <a class="dropdown-item" href="#">Categorical</a>
+                              </div>
+                            </div>
+                        </td>
+                        <td width="20%">
+                            <div class="form-group"> 
+                                <input type="text" class="form-control" value="5"> 
+                            </div>
+                        </td> 
+                        <td width="20%">
+                            <div class="form-group"> 
+                                <input type="text" class="form-control" placeholder="Minutes"> 
+                            </div>
+                        </td> 
+                        <td width="30%"></td>
+                    </tr> 
+                    <tr class="pt-3">
+                        <td colspan="3">
+                            <h4  class="text-left pt-3">Search</h4>
+                        </td>
+                        <td colspan="2" align="right">
+                             
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="30%">
+                            <div class="form-group"> 
+                                <input type="text" class="form-control" placeholder="Oder Value"> 
+                            </div>
+                        </td>
+                        <td width="20%">
+                            <div class="form-group"> 
+                                <input type="text" class="form-control" placeholder="Greater Than"> 
+                            </div>
+                        </td> 
+                        <td width="20%">
+                            <div class="form-group"> 
+                                <input type="text" class="form-control" placeholder="Minutes"> 
+                            </div>
+                        </td> 
+                        <td width="30%"></td>
+                    </tr>
+                    <tr>
+                        <td width="30%">
+                            <div class="form-group"> 
+                                <input type="text" class="form-control" placeholder="Oder Value"> 
+                            </div>
+                        </td>
+                        <td width="20%">
+                            <div class="form-group"> 
+                                <input type="text" class="form-control" placeholder="Greater Than"> 
+                            </div>
+                        </td> 
+                        <td width="20%">
+                            <div class="form-group"> 
+                                <input type="text" class="form-control" placeholder="Minutes"> 
+                            </div>
+                        </td> 
+                        <td width="30%"></td>
+                    </tr>
+                    <tr>
+                        <td width="30%">
+                            <div class="form-group"> 
+                                <input type="text" class="form-control" placeholder="Oder Value"> 
+                            </div>
+                        </td>
+                        <td width="20%">
+                            <div class="form-group"> 
+                                <input type="text" class="form-control" placeholder="Greater Than"> 
+                            </div>
+                        </td> 
+                        <td width="20%">
+                            <div class="form-group"> 
+                                <input type="text" class="form-control" placeholder="Minutes"> 
+                            </div>
+                        </td> 
+                        <td width="30%"></td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+            <%= image_tag('91.png', class: 'back_img') %>
+            <button class="project_btn mt-3 mb-3">Preview</button>
+            <%= image_tag('91.png', class: 'back_img') %>
+        </div> 
+    </div>
+    <div class="row"> 
+        <div class="col-md-12">
+            <div class="table-responsive data_table mt-3 mb-3">
+                <table class="table monitor_table">
+                    <tbody><tr class="border_none">
+                        <td colspan="2" align="right">
+                            <div class="data_content"> 
+                                <h6 class="pt-2 text-left">Total Records in Set: 4000</h6>
+                            </div>
+                        </td>
+                        <td colspan="1" align="right">
+                            <span class="span_show">Show:</span>
+                            <div class="dropdown extra_btn">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    10 <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">20</a>
+                                    <a class="dropdown-item" href="#">50</a>
+                                    <a class="dropdown-item" href="#">100</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td colspan="1">
+                            <form>
+                                <input type="search" name="search" placeholder="Search">
+                                <label><%= image_tag('85.png') %></label>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr class="thead"> 
+                                <th><span>0</span><i class="fa fa-angle-up" aria-hidden="true"></i></th>
+                                <th width="20%"><span>Count</span><i class="fa fa-angle-up" aria-hidden="true"></i></th>
+                                <th width="20%"><span>Count</span><i class="fa fa-angle-up" aria-hidden="true"></i></th>
+                                <th width="30%"><span>uuid</span><i class="fa fa-angle-up" aria-hidden="true"></i></th> 
+                    </tr>
+                    <tr>
+                        <td>12-05-2020 07:45</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>787</td> 
+                    </tr>
+                    <tr>
+                        <td>12-05-2020 07:45</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>787</td> 
+                    </tr>
+                    <tr>
+                        <td>12-05-2020 07:45</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>787</td> 
+                    </tr>
+                    <tr>
+                        <td>12-05-2020 07:45</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>787</td> 
+                    </tr> 
+                    <tr>
+                        <td>12-05-2020 07:45</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>787</td> 
+                    </tr>
+                    <tr>
+                        <td>12-05-2020 07:45</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>787</td> 
+                    </tr>
+                    <tr>
+                        <td>12-05-2020 07:45</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>787</td> 
+                    </tr>
+                    <tr>
+                        <td>12-05-2020 07:45</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>787</td> 
+                    </tr>
+                    </tbody> 
+                </table>
+            </div>
+            <%= image_tag('91.png', class: 'back_img') %>
+            <button class="project_btn mt-3 mb-3">Alert</button>
+            <%= image_tag('91.png', class: 'back_img') %>
+        </div> 
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="table-responsive mt-3 custom_table monitor alert_config">
+               <table class="table">
+                  <thead>
+                    <tr>
+                      <th colspan="4" class="form_img">
+                        <h5 class="mb-0">Alert Configuration</h5>
+                      </th> 
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td colspan="3">
+                            <h4  class="text-left pt-3">Condition</h4>
+                        </td>
+                        <td colspan="2" align="right">
+                            <ul class="nav nav-tabs float-right " id="myTab" role="tablist">
+                              <li class="nav-item">
+                                <a class="nav-link " id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"> Condition</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Alerts Dteails</a>
+                              </li> 
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr> 
+                        <td width="50%">
+                            <div class="dropdown">
+                              <button class="btn btn-secondary dropdown-toggle text-left" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Previous <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Next</a>
+                                <a class="dropdown-item" href="#">Categorical</a>
+                                <a class="dropdown-item" href="#">Categorical</a>
+                              </div>
+                            </div>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td width="50%">
+                            <div class="form-group"> 
+                                <input type="text" class="form-control" value="5"> 
+                            </div>
+                        </td> 
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td width="50%">
+                            <div class="form-group"> 
+                                <input type="text" class="form-control" placeholder="Minutes"> 
+                            </div>
+                        </td> 
+                        <td ></td>
+                    </tr> 
+                     
+                  </tbody>
+                </table>
+            </div>
+            <%= image_tag('91.png', class: 'back_img') %>
+            <button class="project_btn mt-3 mb-3">Save</button> 
+        </div> 
+    </div>
+</form>
 
-<h1>Time Flow Monitors</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Project</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @time_flow_monitors.each do |time_flow_monitor| %>
-      <tr>
-        <td><%= time_flow_monitor.name %></td>
-        <td><%= time_flow_monitor.description %></td>
-        <td><%= time_flow_monitor.project_id %></td>
-        <td><%= link_to 'Show', time_flow_monitor %></td>
-        <td><%= link_to 'Edit', edit_time_flow_monitor_path(time_flow_monitor) %></td>
-        <td><%= link_to 'Destroy', time_flow_monitor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Time Flow Monitor', new_time_flow_monitor_path %>
+</div>
+</div>
+</div>
+</div>
+</section>

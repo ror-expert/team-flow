@@ -1,5 +1,153 @@
-<h1>New Report</h1>
+<!--Event Stream-->
+<section class="event_stream">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12 pb-3">
+              <a href="welcome.html" class="back_btn"><i class="fa fa-arrow-left" aria-hidden="true"></i>Back</a>
+              <div class="new_event text-center pt-5"> 
+                  <h3 class="pb-5">New Report</h3> 
+                  <ul class="nav nav-tabs justify-content-center pb-5" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link " id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><%= image_tag("eye.svg", class: "tab_img") %> Show</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                        <%= image_tag("edit-3.svg", class: "tab_img") %> Edit</a>
+                    </li> 
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                      <!--  <form> -->
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="form-group"> 
+                                      <input type="text" class="form-control" placeholder="Report Name"> 
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="form-group"> 
+                                      <input type="text" class="form-control" placeholder="Report Description"> 
+                                  </div>
+                              </div> 
+                              <div class="col-md-12 text-center">
+                                      <button class="import_btn mt-4 mb-3 ml-2" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus" aria-hidden="true" ></i>Add Items</button>
+                                  </div>
+                              <div class="col-md-12 ">
+                                  <div class="border_final mt-4">
+                                      <button class="project_btn mt-5 mb-5 bg-gray">Submit</button>
+                                  </div>
+                              </div>
+                          </div>
+                      <!-- </form>  -->
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                         <form>
+                              <div class="row">
+                                  <div class="col-md-6">
+                                      <div class="form-group"> 
+                                          <input type="text" class="form-control" placeholder="Report Name"> 
+                                      </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <div class="form-group"> 
+                                          <input type="text" class="form-control" placeholder="Report Description"> 
+                                      </div>
+                                  </div> 
+                                  <div class="col-md-12 text-center">
+                                      <button class="import_btn mt-4 mb-3 ml-2" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus" aria-hidden="true" ></i>Add Items</button>
+                                  </div>
+                                  <div class="col-md-12 ">
+                                      <div class="border_final mt-4">
+                                          <button class="project_btn mt-5 mb-5 bg-gray">Submit</button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </form>
+                    </div> 
+                  </div> 
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--Event Stream--> 
 
-<%= render 'form', report: @report %>
 
-<%= link_to 'Back', reports_path %>
+<!-- The Modal for new item Report -->
+<div class="modal fade" id="myModal">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+  
+    <button type="button" class="close text-right pl-2 pr-3 pt-2" data-dismiss="modal">&times;</button>
+  <!-- Modal body -->
+  <div class="modal-body">
+      <h4 class="modal-title text-center">Add A New Report Item</h4>
+    <ul>
+        <li>
+          <input type="checkbox" id="myCheckbox1" />
+          <label for="myCheckbox1"><%= image_tag("92.png") %></label>
+          <h6>Data Table</h6>
+        </li>
+        <li> 
+          <input type="checkbox" id="myCheckbox2" />
+          <label for="myCheckbox2"><%= image_tag("93.png") %></label>
+          <h6>Time Series</h6>
+        </li>
+        <li> 
+          <input type="checkbox" id="myCheckbox3" />
+          <label for="myCheckbox3"><%= image_tag("94.png") %></label>
+          <h6>Metric</h6>
+        </li>
+        <li> 
+          <input type="checkbox" id="myCheckbox4" />
+          <label for="myCheckbox4"><%= image_tag("95.png") %></label>
+          <h6>Bar Chart</h6>
+        </li>
+        <li> 
+          <input type="checkbox" id="myCheckbox5" />
+          <label for="myCheckbox5"><%= image_tag("96.png") %></label>
+          <h6>Histogram</h6>
+        </li>
+        <li> 
+          <input type="checkbox" id="myCheckbox6" />
+          <label for="myCheckbox6"><%= image_tag("97.png") %></label>
+          <h6>Pie Chart</h6>
+        </li>
+        <li> 
+          <input type="checkbox" id="myCheckbox7" />
+          <label for="myCheckbox7"><%= image_tag("98.png") %></label>
+          <h6>Scatter Plot</h6>
+        </li>
+        <li> 
+          <input type="checkbox" id="myCheckbox8" />
+          <label for="myCheckbox8"><%= image_tag("99.png") %></label>
+          <h6>SQL Query</h6>
+        </li>
+        <li> 
+          <input type="checkbox" id="myCheckbox9" />
+          <label for="myCheckbox9"><%= image_tag("110.png") %></label>
+          <h6>External Source</h6>
+        </li>
+        <li> 
+          <input type="checkbox" id="myCheckbox10" />
+          <label for="myCheckbox10"><%= image_tag("115.png") %></label>
+          <h6>External Source</h6>
+        </li>
+        <li> 
+          <input type="checkbox" id="myCheckbox10" />
+          <label for="myCheckbox10"><%= image_tag("111.png") %></label>
+          <h6>External Source</h6>
+        </li>
+        <li> 
+          <input type="checkbox" id="myCheckbox10" />
+          <label for="myCheckbox10"><%= image_tag("93.png") %></label>
+          <h6>Alerts</h6>
+        </li>
+      </ul>
+      <button class="modal_add">Add</button>
+  </div>
+   
+  
+</div>
+</div>
+</div>

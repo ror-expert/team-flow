@@ -10,28 +10,28 @@
       </div>
       <div class="col-lg-8 col-md-8 text-right"> 
         <ul>
-          <li class="active">
+          <li class="<%= params[:controller] == 'event_streams' ? 'active' : '' %>">
             <a href="<%= event_streams_path %>">
               <%= image_tag('61.png') %>Events
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="<%= params[:controller] == 'data_tabs' ? 'active' : '' %>">
+            <a href="<%= data_tabs_path %>">
               <%= image_tag('62.png') %>Data
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="<%= params[:controller] == 'reports' ? 'active' : '' %>">
+            <a href="<%= reports_path %>">
               <%= image_tag('64.png') %>Reportaing
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="<%= params[:controller] == 'time_flow_monitors' ? 'active' : '' %>">
+            <a href="<%= time_flow_monitors_path %>">
               <%= image_tag('65.png') %>Monitors
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="<%= params[:controller] == 'alerts' ? 'active' : '' %>">
+            <a href="<%= alerts_path %>">
               <%= image_tag('66.png') %>Alerts
             </a>
           </li>

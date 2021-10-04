@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :data_tabs
   resources :simulation_steps
   resources :simulations
   resources :alerts

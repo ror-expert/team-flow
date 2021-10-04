@@ -2,13 +2,13 @@
 */
 /*@font-face {
   font-family: HelveticaNeue;
-  src: url(../fonts/HelveticaNeue-Light-08.ttf);
+  src: url(HelveticaNeue-Light-08.ttf);
 }*/
 a.btn:focus,
 a.btn:active,
 a.btn:visited {
-    outline: none !important;
-    box-shadow: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 button:focus,
@@ -71,7 +71,7 @@ section.login_form {
     color: #292B52;
 }
 .login_inner input:focus ~ label i {
-    background: linear-gradient(263.97deg, #803C8A 16.56%, #FFCDCE 274.83%);
+  background: linear-gradient(263.97deg, #803C8A 16.56%, #FFCDCE 274.83%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -96,8 +96,7 @@ section.login_form {
     color: #fff !important;
     font-size: 16px;
     font-weight: 700 !important;
-    background: linear-gradient(
-263.97deg, #803C8A 16.56%, #FFCDCE 274.83%);
+    background: linear-gradient(263.97deg, #803C8A 16.56%, #FFCDCE 274.83%);
     box-shadow: 0px 10px 24px -4px rgba(16, 24, 40, 0.1) !important;
     border-radius: 58px !important;
 }
@@ -142,79 +141,82 @@ div#message:before {
 /*login and signup css end*/
 /* ======= header css  ======== */
 .md-header{
-      display: flex;
-   }
+  display: flex;
+}
+
 header.top-header {
-    background-color: #fff;
-    padding: 0 20px;
-    height: 46px;
+  background-color: #fff;
+  padding: 0 20px;
+  height: 46px;
 }
 
 header.top-header li.nav-item {
-    margin: 0;
+  margin: 0;
 }
 
 header.top-header .nav-link {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 header.top-header .nav-link:hover {
-    color: #084250;
+  color: #084250;
 }
 
 header.main-header {
-    width: 100%;
-    height: 70px;
-   background: linear-gradient(107.56deg, #22264C 0%, #4A406E 50.52%, #885E80 100%);
-    padding: 15px 20px;
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(107.56deg, #22264C 0%, #4A406E 50.52%, #885E80 100%);
+  padding: 15px 20px;
 }
- .nav-link {
-    font-size: 16px;
-    color: #fff; 
-    font-weight: 400;
-    padding: 10px 18px;
+
+.nav-link {
+  font-size: 16px;
+  color: #fff; 
+  font-weight: 400;
+  padding: 10px 18px;
 }
 
 .nav-link:hover {
-    color: #fff;
+  color: #fff;
 }
 
 a.nav-link.header-btn {
-    background-color: #2e3638;
-    border-radius: 30px;
-    padding: 6px 20px 4px;
-    color: #fff;
-    font-weight: 500;
+  background-color: #2e3638;
+  border-radius: 30px;
+  padding: 6px 20px 4px;
+  color: #fff;
+  font-weight: 500;
 }
 
 .header-logo img {
-    width: auto;
-    height: 60px;
-    margin: -14px auto;
-    display: block;
-    text-align: center;
+  width: auto;
+  height: 60px;
+  margin: -14px auto;
+  display: block;
+  text-align: center;
 }
 .mb-header {
-    display: none;
+  display: none;
 }
+
 .left_side li {
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-sizing: border-box;
-    border-radius: 30px;
-    height: 45px;
-    margin: -2px 0 0 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  border-radius: 30px;
+  height: 45px;
+  margin: -2px 0 0 0;
 }
 
 .left_side li a {
-    padding: 9px 20px;
+  padding: 9px 20px;
 }
 .right-side li {
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-sizing: border-box;
-    border-radius: 30px;
-    width: 45px;
-    height: 45px;
-    line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  border-radius: 30px;
+  width: 45px;
+  height: 45px;
+  line-height: 1;
 }
 
 .right-side li img {
@@ -265,17 +267,16 @@ section.black_header ul li.active {
     background: #f4edf4;
     padding: 12px 20px;
     border-bottom: 3px solid transparent;
-    border-image: linear-gradient(
-253.97deg, #803C8A 16.56%, #FFCDCE 277.83%);
+    border-image: linear-gradient(253.97deg, #803C8A 16.56%, #FFCDCE 277.83%);
     border-image-slice: 1;
 }
 
 section.black_header ul li.active a {
-    background: linear-gradient(to right, #803C8A 100%,  #803C8A 10%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #fff;
-    font-weight: 500;
+  background: linear-gradient(to right, #803C8A 100%,  #803C8A 10%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+  font-weight: 500;
 }
 
 
@@ -296,8 +297,7 @@ section.welcome_sec {
     color: #fff;
     border: 0;
     padding: 12px 30px;
-    background: linear-gradient(
-263.97deg, #803C8A 16.56%, #FFCDCE 274.83%);
+    background: linear-gradient(263.97deg, #803C8A 16.56%, #FFCDCE 274.83%);
     box-shadow: 0px 10px 24px -4px rgba(16, 24, 40, 0.1) !important;
     border-radius: 58px;
     font-size: 16px;
@@ -418,8 +418,7 @@ section.project_new .login_inner textarea{
     width: 70%;
 }
 .color1{
-       background: linear-gradient(
-277.14deg, #B4A2C2 -1.42%, #FC5B74 103.2%);
+  background: linear-gradient(277.14deg, #B4A2C2 -1.42%, #FC5B74 103.2%);
 }
 .color2{
     background: linear-gradient(277.14deg, #B4A2C2 -1.42%, #3775F5 103.2%);
@@ -617,8 +616,7 @@ section.manage_stream h4 {
     padding: 15px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    background: linear-gradient(
-263.97deg, #803C8A 16.56%, #FFCDCE 274.83%);
+    background: linear-gradient(263.97deg, #803C8A 16.56%, #FFCDCE 274.83%);
 
 }
 section.manage_stream form {
@@ -975,6 +973,7 @@ section.event_stream img {
     border: 1px solid #D9DDE7;
     color: #111111;
     opacity: 0.5;
+    width: 100%;
 
 }
 .new_event label img {
@@ -1026,7 +1025,7 @@ section.event_stream img {
 /* When the checkbox is checked, add a blue background */
 .check_box input:checked ~ .checkmark {
   background: linear-gradient(263.97deg, #803C8A 16.56%, #FFCDCE 274.83%);
-border-radius: 4px;
+  border-radius: 4px;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -1120,8 +1119,7 @@ button.table_delete img {
 }
 .custom_table .dropdown-toggle::after , .data_tab .dropdown-toggle::after, .data_table .dropdown-toggle::after{
     display: none;
-}
-
+} 
 .dropdown button i {
     padding: 0 18px;
     position: relative;
@@ -1276,7 +1274,7 @@ table#example thead tr th:last-child i {
 }
  .data_table table tr td form label {
     position: absolute;
-    right: 23.5%;
+    right: 23%;
     top: 38px;
 }
 .data_table tr td input::placeholder {
@@ -1299,7 +1297,362 @@ table#example thead tr th:last-child i {
 .data_table button#dropdownMenuButton {
     height: 34px;
     margin: 8px 0 0 0;
+    padding-top: 4px;
 }
+.data_table span.span_show {
+    position: relative;
+    top: 7px;
+}
+.data_table {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px -4px rgba(16, 24, 40, 0.15);
+    border-radius: 10px;
+}
+tr.thead i, tr.thead i {
+    float: right;
+    margin: 9px 0px 0 0;
+}
+tr.thead span, tr.thead i {
+    color: #667085;
+    opacity: 0.7;
+    font-weight: 400;
+}
+tr.thead {
+    background: #fbfafc;
+}
+/*pagination*/
+.pagination {
+  display: inline-block;
+}
+
+.pagination a { 
+ float: left;
+    background: #FFFFFF;
+    border: 1px solid #D9DDE7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #333333;
+    margin: 0 3px;
+    font-size: 13px;
+    padding: 7px 14px;
+}
+
+.pagination a.active {
+    background: linear-gradient(263.97deg, #803C8A 16.56%, #FFCDCE 274.83%);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #fff;
+}
+.pagination a:hover:not(.active) {background-color: #ddd;}
+tfoot tr td {
+    padding-bottom: 0 !important;
+}
+
+.data_table .table {
+    margin-bottom: 6px;
+}
+a.previous, .next {
+    background: #FFFFFF;
+    border: 1px solid #D9DDE7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #333333;
+    opacity: 0.5;
+    font-size: 13px;
+    padding: 7px 14px;
+}
+a.next i {
+    font-size: 10px;
+    padding: 0 0px 0 7px;
+}
+a.previous i {
+    padding: 0 4px 0 0;
+    font-size: 10px;
+}
+tfoot p {
+    color: #667085;
+    opacity: 0.7;
+    font-size: 14px;
+    margin: 8px 0 0 0;
+}
+.data_table tr td {
+    font-size: 14px;
+    color: #333333;
+}
+tr.border_none td {
+    border: none;
+}
+/*New Report*/
+ul#myTab li a img {
+    width: 30px;
+    padding: 0 6px 0 0;
+}
+
+ul#myTab li a {
+    color: #292B52;
+}
+ul#myTab{border: none}
+ul#myTab li a.active {
+    background: linear-gradient(263.97deg, #803C8A 16.56%, #FFCDCE 274.83%);
+    border-radius: 10px;
+    color: #fff;
+}
+
+ul#myTab li a img {
+    fill: #fff;
+}
+ul#myTab li a {
+    box-shadow: 0px 4px 10px -4px rgba(16, 24, 40, 0.15);
+    border-radius: 10px;
+    border: 1px solid #803C8A;
+}
+a#home-tab {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+#profile-tab {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+.bg-gray{background: #D1C5DA;}
+.monitor .dropdown button i { 
+    left: 69%;
+}
+.monitor input {
+    opacity: unset;
+}
+.alert_inner {
+    display: inline-flex;
+    align-items: center;
+}
+.alert_content h4 {
+    color: #292B52;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+.alert_content {
+    padding: 0 0 0 15px;
+}
+.status_red {
+    background: #FAE7E7;
+    border-radius: 5px;
+    border: 0;
+    padding: 4px 12px;
+    color: #7A0202; 
+}
+.status_green {
+    background: #E7FAE9;
+    border-radius: 5px;
+    border: 0;
+    padding: 4px 12px;
+    color:#027A48; 
+}
+.alert form label {
+    right: 27% !IMPORTANT;
+}
+.monitor {
+    border-radius: 10px 10px 0px 0px;
+}
+th.form_img img {
+        position: absolute;
+    width: 16px;
+    right: 42px;
+    top: 43px;
+}
+
+.monitor table tr th input {
+    background-color: transparent;
+    border: none;
+    box-shadow: unset !important;
+    height: 30px;
+}
+.monitor table tr h4:after {
+    content: "";
+    border-bottom: 1px solid #80808075;
+    display: block;
+    padding: 10px 0 0 0;
+}
+.monitor h4 {
+    font-size: 20px;
+}
+img.back_img {
+    width: 30px !important;
+    display: block;
+    margin: -15px auto;
+}
+.monitor_table tr td label {
+    right: 25% !important;
+    top: 22px !important;
+}
+
+table.table.monitor_table .dropdown.extra_btn {
+    margin-top: -5px;
+}
+
+table.table.monitor_table input {
+    margin-top: 3px;
+}
+.monitor_table tr th, .monitor_table tr td {
+    text-align: left;
+}
+.alert_config .dropdown button i {
+    left: 80%;
+}
+ 
+div#myModal li {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  background: #FFFFFF;
+  border: 1px solid #E2E7F1;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px -4px rgba(16, 24, 40, 0.1);
+  border-radius: 15px;
+  margin: 14px 14px 60px;
+}
+
+div#myModal input[type="checkbox"][id^="myCheckbox"] {
+  display: none;
+}
+
+div#myModal label {  
+  display: block;
+  position: relative; 
+  cursor: pointer;
+      margin-bottom: 0;
+    border-radius: 15px;
+    padding-top: 40px;
+}
+
+div#myModal label:before { 
+  color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid grey;
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 16px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+    background: linear-gradient(263.97deg, #803C8A 16.56%, #FFCDCE 274.83%);
+    border-radius: 4px;
+}
+
+div#myModal label img {
+  height: 100px;
+  width: 100px;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+div#myModal :checked + label {
+  border-color: #ddd;
+  background: #FCF7FB;
+  height: 100%;
+}
+
+div#myModal :checked + label:before {
+  content: "✓";
+  background-color: grey;
+  transform: scale(1);
+}
+
+div#myModal :checked + label img {
+  transform: scale(0.9);
+  /* box-shadow: 0 0 5px #333; */
+  z-index: -1;
+}
+div#myModal li img {
+        width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    
+    position: relative;
+    top: -22px;
+
+}
+
+div#myModal ul {
+    padding: 0;
+}
+.new_event h3 a img {
+    width: auto;
+    margin: 0 0 0 10px;
+}
+table.table.monitor_table.report_table thead {
+    background-color: #f5eef5;
+    border-radius: 20px;
+}
+table.table.monitor_table.report_table tr th {
+    border: none;
+    color: #803C8A;
+    font-weight: normal;
+}
+/*.report_table tr td label {
+    top: 12% !important;
+}*/
+.report_table tr td label {
+    top: 15% !important;
+}
+.report_form table tr th h5 a {
+    margin: -4px 0px 0 8px;
+    font-size: 18px;
+}
+.extra_drop.dropdown button i {
+    left: 44%;
+}
+.dropdown.extra_drop_right button i {
+    left: 81%;
+}
+.dropdown.extra_down button i {
+    left: 62%;
+}
+.report_img img {
+    width: 100% !IMPORTANT;
+}
+.report_table label img {
+    left: 46%;
+    top: 16%;
+}
+td.report_table_td form label {
+    right: 29% !important;
+}
+div#myModal h4 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #292B52;
+    padding-bottom: 30px;
+}
+button.modal_add {
+    background: linear-gradient(263.97deg, #803C8A 16.56%, #FFCDCE 274.83%);
+/* SHADOW BUTTON */
+    box-shadow: 4px 4px 10px rgba(128, 60, 138, 0.22);
+    border-radius: 73px;
+    border: 0;
+    color: #fff;
+    margin: 30px auto;
+    display: block;
+    width: 300px;
+    padding: 10px;
+}
+div#myModal ul li h6 {
+    text-align: center;
+    padding: 20px 0 0 0;
+    color: #803C8A;
+}
+
+
+
 
 
 
@@ -1318,8 +1671,7 @@ table#example thead tr th:last-child i {
     z-index: 99;
     width: 280px;
     height: 100%;
-    background: linear-gradient( 
-263.97deg, #803C8A 16.56%, #FFCDCE 274.83%);
+    background: linear-gradient(263.97deg, #803C8A 16.56%, #FFCDCE 274.83%);
     overflow: auto;
     padding: 20px;
   }
