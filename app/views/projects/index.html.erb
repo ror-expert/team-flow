@@ -6,85 +6,40 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12 ">
-        <div class="your_inner">
-          <div class="your_project_inner color4">
-            <div class="your_img mt-2">
-              <%= image_tag('57.png') %>
-            </div>
-            <div class="your_content">
-              <h3>Customer Value Examination</h3>
-              <p class="text-light mb-0 pt-1">Benjamin Wootton</p>
-            </div>
-            <div class="your_right text-right">
-              <ul>
-                <li><a href="#"></a>
-                  <%= image_tag('58.png') %>
-                </li>
-                <li><a href="#"></a>
-                  <%= image_tag('59.png') %>
-                </li>
-                <li><a href="#"></a>
-                  <%= image_tag('60.png') %>
-                </li>
-              </ul>
+      <% color = ['color4', 'color8', 'color5'] %>
+      <% index = 0 %>
+
+      <% @projects.each do |project| %>
+        <div class="col-md-12 ">
+          <div class="your_inner">
+            <div class="your_project_inner <%= color[index] %>">
+              <% index = (index == 2 ? 0 : index+1) %>
+              <div class="your_img mt-2">
+                <%= image_tag('57.png') %>
+              </div>
+              <div class="your_content">
+                <h3><%= project.name %></h3>
+                <p class="text-light mb-0 pt-1">Benjamin Wootton</p>
+              </div>
+              <div class="your_right text-right">
+                <ul>
+                  <li><a href="<%= edit_project_path(project) %>">
+                    <%= image_tag('58.png') %></a>
+                  </li>
+                  <li><a href="<%= project_path(project) %>">
+                    <%= image_tag('59.png') %></a>
+                  </li>
+                  <li><a href="<%= project_path(project) %>" method=DELETE>
+                    <%= image_tag('60.png') %></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-12">
-        <div class="your_inner">
-          <div class="your_project_inner color8">
-            <div class="your_img mt-2">
-              <%= image_tag('57.png') %>
-            </div>
-            <div class="your_content">
-              <h3>Customer Value Examination</h3>
-              <p class="text-light mb-0 pt-1">Benjamin Wootton</p>
-            </div>
-            <div class="your_right text-right">
-              <ul>
-                <li><a href="#"></a>
-                  <%= image_tag('58.png') %>
-                </li>
-                <li><a href="#"></a>
-                  <%= image_tag('59.png') %>
-                </li>
-                <li><a href="#"></a>
-                  <%= image_tag('60.png') %>
-                </li>
-              </ul>
-            </div>
-          </div> 
-        </div>
-      </div>
-      <div class="col-md-12 ">
-        <div class="your_inner">
-          <div class="your_project_inner color5">
-            <div class="your_img mt-2">
-              <%= image_tag('57.png') %>
-            </div>
-            <div class="your_content">
-              <h3>Customer Value Examination</h3>
-              <p class="text-light mb-0 pt-1">Benjamin Wootton</p>
-            </div>
-            <div class="your_right text-right">
-              <ul>
-                <li><a href="#"></a>
-                  <%= image_tag('58.png') %>
-                </li>
-                <li><a href="#"></a>
-                  <%= image_tag('59.png') %>
-                </li>
-                <li><a href="#"></a>
-                  <%= image_tag('60.png') %>
-                </li>
-              </ul>
-            </div>
-          </div> 
-        </div>
-      </div>
+      <% end %>
     </div>
+
     <div class="row bottom_btn mt-1 mb-5">
       <div class="col-md-6 col-6 text-right">
         <button class="import_btn">Import Project</button>
