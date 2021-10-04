@@ -1451,7 +1451,7 @@ a#home-tab {
     color:#027A48; 
 }
 .alert form label {
-    right: 27% !IMPORTANT;
+    right: 27% !important;
 }
 .monitor {
     border-radius: 10px 10px 0px 0px;
@@ -1618,7 +1618,7 @@ table.table.monitor_table.report_table tr th {
     left: 62%;
 }
 .report_img img {
-    width: 100% !IMPORTANT;
+    width: 100% !important;
 }
 .report_table label img {
     left: 46%;
